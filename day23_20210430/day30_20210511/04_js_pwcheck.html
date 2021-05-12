@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function pwcheck() {
+        function pwdcheck() {
             // 입력값을 가져와서 일치하는지 판단
             var pwd = document.getElementById("pwd").value;
-            var pwcheck =document.getElementById("pwcheck").value;
+            var pwdcheck =document.getElementById("pwdcheck").value;
             var result = document.getElementById("result");
-
-            if(pwd == pwcheck) {
+            if(pwd == pwdcheck) {
                 result.style.color='green';
                 result.innerHTML='비밀번호 일치';
             } else {
                 result.style.color='red';
                 result.innerHTML = '비밀번호 불일치';
-
             }
         }
     </script>
@@ -26,11 +24,11 @@
     input {
         width: 300px;
         }
-        </style>
+    </style>
 </head>
 <body>
     비밀번호: <input type="text" id="pwd" placeholder="비밀번호를 입력하세요"><br>
-    비밀번호확인: <input type="text" id="pwcheck" onkeyup="pwcheck()" placeholder="비밀번호를 한번 더 입력하세요"><br>
+    비밀번호확인: <input type="text" id="pwdcheck" onkeyup="pwdcheck()" placeholder="비밀번호를 한번 더 입력하세요"><br>
     <span id="result"></span>
     
 </body>
